@@ -8,7 +8,7 @@
 
 1) We're going to be using the `activerecord` gem to create a mapping between our database and model.
 
-2) While this is marked as a Readme, fork and clone this repository. Take a look at the Gemfile in this directory. Be sure to run `bundle install`.
+2) While this is marked as a Readme, fork and clone this repository (found **[here](https://github.com/learn-co-students/mechanics-of-migrations-v-000)**). Take a look at the Gemfile in this directory. Be sure to run `bundle install`.
 
 ## Migrations
 
