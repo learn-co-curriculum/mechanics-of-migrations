@@ -300,3 +300,5 @@ Oh good, your job is saved. Thanks ActiveRecord! Now when the boss says it's act
 Woohoo!
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/mechanics-of-migrations'>Mechanics of Migrations</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/mechanics-of-migrations'>Mechanics of Migrations</a> on Learn.co and start learning to code for free.</p>
