@@ -35,13 +35,6 @@ describe "Artist" do
     expect(Artist.find_by(name: 'Taylor Swift').genre).to eq("Pop / Country")
   end
 
-  # it "can add gender to an Artist" do
-  #   weeknd = Artist.create(name: 'The Weeknd', genre: "Alternative R&B", age: Time.now.strftime("%Y").to_i - 2010, hometown: "Toronto")
-  #   weeknd.gender = "Male"
-  #
-  #   expect(weeknd.gender).to eq("Male")
-  # end
-
   it "can roll back to have no gender attribute for Artist" do
     expect(Artist.column_names).to eq(["id", "name", "genre", "age", "hometown"])
   end
