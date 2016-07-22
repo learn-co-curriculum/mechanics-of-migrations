@@ -32,7 +32,7 @@ describe "Artist" do
     taytay = Artist.create(name: 'Taylor Swift', genre: "Pop / Country", age: Time.now.strftime("%Y").to_i - 2006, hometown: "Reading")
     queen = Artist.create(name: 'Queen', genre: "Rock", age: Time.now.strftime("%Y").to_i - 1973, hometown: "London")
 
-    expect(Artist.find_by(name: 'Taylor Swift').genre).to eq("Pop / Country")
+    expect(Artist.find_by(name: "Taylor Swift")).to eq(taytay)
   end
 
   it "can roll back to have no gender attribute for Artist" do
