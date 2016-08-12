@@ -2,7 +2,7 @@
 
 ## Objective
 
-1. Create, connect to, and manipulate a SQLite database using ActiveRecord.
+1. Create, connect to, and manipulate an SQLite database using ActiveRecord.
 
 ## Setup
 
