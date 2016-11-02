@@ -166,7 +166,7 @@ class Artist < ActiveRecord::Base
 end
 ```
 
-Last, we need to create our `artists` table with SQL
+Last, we need to create our `songs` table with SQL
 
 ```ruby
 # artist.rb
