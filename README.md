@@ -147,7 +147,7 @@ ActiveRecord::Base.establish_connection(
 This file is requiring the gems in our Gemfile and giving our program access to them. We're going to connect to our artists db, which will be created in the migration, via sqlite3 (the adapter).
 
 Let's run `rake db:migrate`
-
+	> where is number 1)? and waht is the connection between migration and base, this seems to be a mistake.
 4) Take a look at `artist.rb`. Let's create an Artist class.
 
 ```ruby
