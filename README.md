@@ -54,7 +54,7 @@ end
 
 ```
 
-Which is just short for do this, and then undo it on rollback. Let's look at creating the rest of the migration to generate our artists table and add some columns.
+Which is just short for "do this, and then undo it on rollback". Let's look at creating the rest of the migration to generate our artists table and add some columns.
 
 ### Creating a Table
 
