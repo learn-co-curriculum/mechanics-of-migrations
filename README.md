@@ -166,26 +166,6 @@ class Artist < ActiveRecord::Base
 end
 ```
 
-Last, we need to create our `artists` table with SQL
-
-```ruby
-# artist.rb
-
-class Artist < ActiveRecord::Base
-  def self.create_table
-    sql = <<-SQL
-    CREATE TABLE IF NOT EXISTS songs (
-      id INTEGER PRIMARY KEY,
-      title TEXT,
-      length INTEGER
-    )
-    SQL
-
-    ActiveRecord::Base.connection.execute(sql)
-  end
-end
-```
-
 To test it out, let's use the rake task `rake console`, which we've created in the `Rakefile`.
 
 
