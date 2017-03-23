@@ -4,7 +4,7 @@
 
 1. Create, connect to, and manipulate a SQLite database using ActiveRecord.
 
-## Setup
+## Setup 
 
 1) We're going to be using the `activerecord` gem to create a mapping between our database and model.
 
@@ -302,3 +302,4 @@ Woohoo!
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/mechanics-of-migrations'>Mechanics of Migrations</a> on Learn.co and start learning to code for free.</p>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/mechanics-of-migrations'>Mechanics of Migrations</a> on Learn.co and start learning to code for free.</p>
+m
