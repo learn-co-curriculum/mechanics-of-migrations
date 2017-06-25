@@ -22,7 +22,14 @@ Executed migrations are tracked by ActiveRecord in your database, so they aren't
 
 ### Setting Up Your Migration
 
-1. If you haven't done so already, fork and clone this repository via Github. (This is marked as a Readme so you'll need to open this on Github.) Make a directory in the directory called `db`. Then within the `db` directory, create a `migrate` directory.
+1. If you haven't done so already, fork and clone this repository via Github. (This is marked as a Readme so you'll need to open this on Github.) Make a directory in the directory called `db`. Then within the `db` directory, create a `migrate` directory. IMPORTANT NOTE: If you're using the Learn IDE, make sure that you create both the `db` directory and the `migrate` directory using the `mkdir` command. 
+
+```
+mkdir db
+mkdir db/migrate
+```
+
+If you create these directories through the file tree, you will get a permissions error when you try to run rake db:migrate later.
 
 2. In the migrate directory, create a file called `01_create_artists.rb` (we'll talk about why we added the 01 later).
 
@@ -67,7 +74,7 @@ First, we'd have to connect to a database:
 
 connection = ActiveRecord::Base.establish_connection(
   :adapter => "sqlite3",
-  :database => "db/songs.sqlite"
+  :database => "db/artists.sqlite"
 )
 
 
@@ -80,8 +87,10 @@ Then, we'd create our table using SQL:
 sql = <<-SQL
   CREATE TABLE IF NOT EXISTS artists (
   id INTEGER PRIMARY KEY,
-  title TEXT,
-  length INTEGER
+  name TEXT,
+  genre TEXT, 
+  integer AGE,
+  hometown TEXT
   )
 SQL
 
@@ -163,26 +172,6 @@ Next, we'll extend the class with `ActiveRecord::Base`
 # artist.rb
 
 class Artist < ActiveRecord::Base
-end
-```
-
-Last, we need to create our `artists` table with SQL
-
-```ruby
-# artist.rb
-
-class Artist < ActiveRecord::Base
-  def self.create_table
-    sql = <<-SQL
-    CREATE TABLE IF NOT EXISTS songs (
-      id INTEGER PRIMARY KEY,
-      title TEXT,
-      length INTEGER
-    )
-    SQL
-
-    ActiveRecord::Base.connection.execute(sql)
-  end
 end
 ```
 
